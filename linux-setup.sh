@@ -8,7 +8,12 @@ printf "\nUpdating aptitude:\n"
 sudo aptitude update
 
 packages="
+curl
+screen
+sshfs
 terminator
+tmux
+wget
 "
 printf "\nInstalling the following packages:\n\n"
 for p in $packages ; do echo "$p" ; done ; echo
