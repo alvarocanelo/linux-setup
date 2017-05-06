@@ -9,6 +9,7 @@ sudo aptitude update
 
 packages="
 curl
+ipython
 radiotray
 screen
 sshfs
