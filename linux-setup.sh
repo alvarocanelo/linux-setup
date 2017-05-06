@@ -9,10 +9,12 @@ sudo aptitude update
 
 packages="
 curl
+radiotray
 screen
 sshfs
 terminator
 tmux
+tree
 wget
 "
 printf "\nInstalling the following packages:\n\n"
