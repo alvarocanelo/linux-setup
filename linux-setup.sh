@@ -12,6 +12,7 @@ curl
 ipython
 radiotray
 screen
+skype
 sshfs
 terminator
 tmux
