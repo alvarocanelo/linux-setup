@@ -31,31 +31,31 @@ solve_conflict(){
 
 set -e
 
-# ### Linux packages
-# # Add repositories signing keys to be able to verify downloaded packages
-# sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
-# # Add repositories
-# echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
-# # Update list of available packages
-# printf "\nUpdating aptitude:\n"
-# sudo aptitude update
-# # Install packages
-# packages="
-# curl
-# ipython
-# radiotray
-# screen
-# skype
-# spotify.client
-# sshfs
-# terminator
-# tmux
-# tree
-# wget
-# "
-# printf "\nInstalling the following packages:\n\n"
-# for p in $packages ; do echo "$p" ; done ; echo
-# sudo aptitude install -y $packages
+### Linux packages
+# Add repositories signing keys to be able to verify downloaded packages
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+# Add repositories
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+# Update list of available packages
+printf "\nUpdating aptitude:\n"
+sudo aptitude update
+# Install packages
+packages="
+curl
+ipython
+radiotray
+screen
+skype
+spotify.client
+sshfs
+terminator
+tmux
+tree
+wget
+"
+printf "\nInstalling the following packages:\n\n"
+for p in $packages ; do echo "$p" ; done ; echo
+sudo aptitude install -y $packages
 
 ### Copy configuration files
 directories="
