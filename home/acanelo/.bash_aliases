@@ -7,5 +7,6 @@ alias serialusb='screen -S serialusb /dev/ttyUSB0 115200'
 alias ymd_date='date +%Y%m%d'
 #
 # SSH accesses
+alias digitalocean-droplet='ssh digitalocean-droplet'
 #
 # Temporal stuff
